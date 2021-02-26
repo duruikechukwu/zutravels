@@ -301,10 +301,10 @@ footer {
     position: relative;
   }
   nav {
-    display: none;
     position: fixed;
     top:0;
-    right: 0;
+    right: -800px;
+    transition: right 0.4s;
     width:90%;
     height: 100vh;
     background-color: #444444;
@@ -327,7 +327,7 @@ footer {
     font-size: 20px;
   }
   #show-menu-chk:checked ~ nav{
-    display: block;
+    right: 0;
   }
 
   .logo {
