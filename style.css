@@ -1,0 +1,460 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  min-height: 123px;
+  padding: 0 50px;
+}
+header,
+footer {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#show-menu-chk {
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.nav-items {
+  margin-left: 32px;
+}
+.nav-items a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  color: #666666;
+  font-family: "Work Sans", sans-serif;
+}
+.nav-items a:hover{
+    font-weight: bold;
+}
+.logo {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 0.5px;
+  margin: 0 10px;
+  font-family: "Work Sans", sans-serif;
+}
+.logo span {
+  color: #ff9900;
+}
+.menu-btn {
+  display: none;
+}
+.search-bar #search {
+  width: 188px;
+  font-size: 16px;
+  height: 19px;
+  line-height: 16px;
+  color: #999999;
+  font-family: "Work Sans", sans-serif;
+}
+.search-bar button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.search-bar i {
+  font-size: 16px;
+}
+.top-section {
+  background-image: url("images/nils-nedel-ONpGBpns3cs-unsplash 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 576px;
+  border: solid transparent;
+  border-left: none;
+}
+.top-section h1 {
+  margin-left: 9.38%;
+  margin-top: 296px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 80px;
+  letter-spacing: 2px;
+  color: #ff9900;
+  font-family: Merriweather, serif;
+}
+.top-section p {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 35px;
+  letter-spacing: 0.5px;
+  margin-left: 9.38%;
+  max-width: 702px;
+  font-family: "Work Sans", sans-serif;
+}
+.article-section {
+  width: 79vw;
+  height: 36vw;
+  margin: 105px auto;
+  display: grid;
+  grid-template-columns: 531fr 89.2fr 590fr;
+
+  grid-template-areas:
+    "image . title"
+    "image . heading"
+    "image . body"
+    "image . button";
+}
+.section-image {
+  width: 100%;
+  height: 100%;
+  grid-area: image;
+}
+.section-title {
+  grid-area: title;
+  font-size: 1.04vw;
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.3vw;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ff9900;
+}
+.article-title {
+  font-family: Merriweather, serif;
+  font-size: 3.6vw;
+  line-height: 5.2vw;
+  letter-spacing: 0.13vw;
+  margin: 0;
+  grid-area: heading;
+}
+.article-body {
+  font-size: 1.07vw;
+  font-family: "Work Sans", sans-serif;
+  line-height: 2.08vw;
+  color: #666666;
+  text-align: justify;
+  grid-area: body;
+}
+.article-btn {
+  grid-area: button;
+  justify-self: right;
+  background-color: #ff9900;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.04vw;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: "Work Sans", sans-serif;
+  border: none;
+  width: 11.5vw;
+}
+
+.achievement {
+  width: 79vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1.95vw;
+}
+.achieve-card {
+  height: 36vw;
+  display: grid;
+  grid-template-rows: 402fr 80fr 60fr;
+}
+.achieve-card-img {
+  width: 100%;
+  height: 100%;
+}
+.achieve-card-number {
+  font-family: Merriweather, serif;
+  font-weight: bold;
+  font-size: 1.56vw;
+  letter-spacing: 0.13vw;
+  justify-self: center;
+}
+.achieve-card-desc {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.3vw;
+  color: #666666;
+  width: 95px;
+  justify-self: center;
+  text-align: center;
+}
+.team {
+  width: 79vw;
+  margin: 105px auto;
+  display: grid;
+  background-color: #000000;
+}
+.team-article {
+  margin-bottom: 6.5vw;
+}
+.team .article-title {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 3.86vw;
+}
+.team .article-body {
+  text-align: center;
+  color: #ffffff;
+  margin: 1.77vw auto 10px auto;
+  width: 52vw;
+}
+.team-body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10vw;
+  padding: 5px 5.23vw;
+}
+.team-card {
+  height: 22vw;
+  display: grid;
+  grid-template-rows: 100fr 18fr 18fr;
+  grid-row-gap: 15px;
+  margin-bottom: 9.79vw;
+}
+.team-card-img {
+  width: 100%;
+  height: 100%;
+}
+.team-card-name {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.3vw;
+  letter-spacing: 0.13vw;
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+.team-card-position {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.04vw;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  margin: 0;
+}
+footer {
+  min-height: 120px;
+  padding-left: 135px;
+  padding-right: 135px;
+  background-color: #444444;
+}
+.copyright {
+  font-family: "Work Sans";
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+.footer-nav .nav-items a {
+  color: #ffffff;
+}
+@media (max-width: 940px) {
+  .article-body {
+    font-size: 1.5vw;
+  }
+  .logo {
+    order: 1;
+    width: 100%;
+    text-align: left;
+    margin-left: 5.22vw;
+  }
+  nav {
+    order: 2;
+    width: 100%;
+    margin: 10px;
+  }
+  .nav-list {
+    justify-content: space-between;
+  }
+  .search-bar {
+    order: 3;
+    width: 100%;
+    text-align: center;
+  }
+  .copyright {
+    width: 100%;
+    order: 2;
+    text-align: center;
+  }
+  footer {
+    padding: 0 10px;
+  }
+  .footer-nav {
+    width: 100%;
+    order: 1;
+  }
+  .footer-nav,
+  .nav-items {
+    margin-left: 0;
+  }
+}
+@media (max-width: 640px) {
+  header {
+    min-height: 91px;
+    position: relative;
+  }
+  nav {
+    display: none;
+    position: fixed;
+    top:0;
+    right: 0;
+    width:90%;
+    height: 100vh;
+    background-color: #444444;
+  }
+  .nav-list{
+      display: block;  
+  }
+  #hide-menu-btn{
+      text-align: right;
+      width: 90%;
+      margin-top: 20px;
+      font-size: 20px;
+      color: #ffffff;
+  }
+  .nav-items a{
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    line-height: 80px;
+    font-size: 20px;
+  }
+  #show-menu-chk:checked ~ nav{
+    display: block;
+  }
+
+  .logo {
+    order: 1;
+    width: auto;
+    font-size: 20px;
+  }
+  .search-bar {
+    width: auto;
+    order: 2;
+  }
+  .search-bar input {
+    display: none;
+  }
+  .search-bar button {
+    margin: 0;
+  }
+  .menu-btn {
+    display: inline-block;
+  }
+  .top-section {
+    height: 712px;
+  }
+  .top-section h1 {
+    font-size: 36px;
+    line-height: 47px;
+  }
+  .article-section {
+    height: auto;
+    grid-template-columns: 1fr;
+    justify-content: start;
+    grid-template-areas:
+      "title"
+      "heading"
+      "image"
+      "body"
+      "button";
+  }
+  .section-image {
+    width: 100%;
+    height: auto;
+    grid-area: image;
+  }
+  .section-title {
+    grid-area: title;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+  }
+  .article-title {
+    grid-area: heading;
+    font-size: 48px;
+    line-height: 62px;
+    letter-spacing: spacing 2px;
+  }
+  .article-body {
+    grid-area: body;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+  }
+  .article-btn {
+    grid-area: button;
+    justify-self: start;
+    font-size: 16px;
+    line-height: 64px;
+    width: 170px;
+  }
+  .achievement {
+    grid-template-columns: 1fr;
+  }
+  .achieve-card {
+    height: unset;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "image image"
+      "number description";
+  }
+  .achieve-card-img {
+    height: auto;
+    max-height: 270px;
+    grid-area: image;
+  }
+  .achieve-card-number {
+    grid-area: number;
+    font-size: 24px;
+    line-height: 80px;
+    letter-spacing: 2px;
+    justify-self: end;
+  }
+  .achieve-card-desc {
+    grid-area: description;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.5px;
+    justify-self: start;
+    margin-left: 15px;
+    margin-top: 30px;
+  }
+  .team-body {
+    grid-template-columns: 1fr;
+  }
+  .team-card {
+    height: unset;
+    grid-template-rows: auto;
+  }
+  .team-card-img {
+    height: auto;
+  }
+  .team-card-name {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+  }
+  .team-card-position {
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+  }
+  .footer-nav {
+    display: none;
+  }
+  .copyright {
+    text-align: left;
+  }
+  .copyright span {
+    color: #ff9900;
+  }
+}
